@@ -1,28 +1,20 @@
+//5.  Escribe un programa que pida un número, pida otro número y escriba
+//el resultado de sumar estos dos números.
 
-//let nameValue = document.getElementById('name').value;
-//document.getElementById("value").innerHTML = nameValue; 
+const inputNum1 = document.getElementById('num1');
+const inputNum2 = document.getElementById('num2');
+const btn = document.getElementById('btn');
+const resultado1 = document.getElementById('result');
 
+btn.addEventListener('click', () =>{
+    let num1 = parseInt(inputNum1.value);
+    let num2 = parseInt(inputNum2.value);
+    let resultado = add(num1, num2);
+    resultado1.innerHTML = `Resultado : ${resultado}`;
+})
 
-
-//if (age >= 18){
-  //  console.log("Puedes conducir");
-//}
-
-
-//Solucion **********************************
-//Pedir nombre de usuario
-//Pedir edad
-//Comprobar que tiene 18 años
-//Si tiene la edad puede conducir
-
-
-let inputUserName = document.getElementById('user');
-let btnValidate = document.getElementById('btn-validate');
-
-
-function app(){
-   // console.log() //Comprobacion de que esta funcionando
-    btn-validate.addEventListener("click",function(){console.log(inputUserName.placeholder)});
+function add(num1, num2){
+    
+    return('Resultado: ', num1 + num2);
 }
 
-app();
